@@ -1,23 +1,97 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
 
-\f0\fs24 \cf0 bot.py\
-	- holds the main function, file to run\
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 # NBA Reddit Bot\
 \
-nba.py\
-	- holds methods that use the nba_py library\
+Reddit bot written for /r/nba. Calculates the players that played better/worse than their season averages, and outputs a table with statistics from stats.nba.com (using nba_py). Uses praw to post comment into the Next Day Thread on /r/nba\
 \
+## Getting Started\
 \
-praw.ini needs to be updated with reddit user info\
+Go to {\field{\*\fldinst{HYPERLINK "https://www.reddit.com/prefs/apps"}}{\fldrslt https://www.reddit.com/prefs/apps}}, and click \'93create an app\'94. Record the client_id, client_secret, and your reddit user/pass in praw.ini under [bot1]\
 \
-written_submissions.txt holds the reddit submission ids that have already been written to, used to prevent spamming\
+### Prerequisites\
 \
-player_list.json are files that hold player data from that day. used for quick import so as to not have to call nba_py every time the program is run\
+What things you need to install the software and how to install them\
 \
-ProcessLog.log is a log for when program was last run, and different info about the last run.\
+```\
+Give examples\
+```\
 \
-using crontab at the moment to automate running the program}
+### Installing\
+\
+A step by step series of examples that tell you have to get a development env running\
+\
+Say what the step will be\
+\
+```\
+Give the example\
+```\
+\
+And repeat\
+\
+```\
+until finished\
+```\
+\
+End with an example of getting some data out of the system or using it for a little demo\
+\
+## Running the tests\
+\
+Explain how to run the automated tests for this system\
+\
+### Break down into end to end tests\
+\
+Explain what these tests test and why\
+\
+```\
+Give an example\
+```\
+\
+### And coding style tests\
+\
+Explain what these tests test and why\
+\
+```\
+Give an example\
+```\
+\
+## Deployment\
+\
+Add additional notes about how to deploy this on a live system\
+\
+## Built With\
+\
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used\
+* [Maven](https://maven.apache.org/) - Dependency Management\
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds\
+\
+## Contributing\
+\
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.\
+\
+## Versioning\
+\
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). \
+\
+## Authors\
+\
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)\
+\
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.\
+\
+## License\
+\
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details\
+\
+## Acknowledgments\
+\
+* Hat tip to anyone who's code was used\
+* Inspiration\
+* etc\
+}
